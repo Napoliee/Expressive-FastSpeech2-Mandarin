@@ -113,12 +113,10 @@ __pycache__
 # data, checkpoint, and models
 raw_data/
 output/
-!output/ckpt/
 *.npy
 TextGrid/
 hifigan/*.pth.tar
-#lexicon/
-#montreal-forced-aligner/
+lexicon/
+montreal-forced-aligner/
 preprocessed_data/
 preparation/*.txt
-
