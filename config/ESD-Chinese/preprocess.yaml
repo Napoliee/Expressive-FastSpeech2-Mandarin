@@ -1,0 +1,41 @@
+dataset: "ESD-Chinese"
+
+path:
+  corpus_path: "./Emotional Speech Dataset (ESD)/Emotion Speech Dataset"
+  raw_path: "./raw_data/ESD-Chinese-Singing-MFA"
+  preprocessed_path: "./preprocessed_data/ESD-Chinese"
+
+preprocessing:
+  val_ratio: 0.15
+  test_ratio: 0.05
+  text:
+    text_cleaners: ["chinese_cleaners"]
+    language: "zh"
+  audio:
+    sampling_rate: 22050
+    max_wav_value: 32768.0
+    preemphasize: 0.97
+    ref_level_db: 20.0
+    num_freq: 1025
+    frame_length_sample: 1024
+    frame_shift_sample: 256
+    center: True
+    griffin_lim_iters: 60
+  mel:
+    normalize: True
+    n_mel_channels: 80
+    min_mel_freq: 0.
+    max_mel_freq: 8000. # please set to 8000 for HiFi-GAN vocoder, set to null for MelGAN vocoder
+    max_abs_value: 1
+    min_level_db: -100.0
+    power: 1.5
+  stft:
+    filter_length: 1024
+    hop_length: 256
+    win_length: 1024
+  pitch:
+    feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
+    normalization: True
+  energy:
+    feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
+    normalization: True 

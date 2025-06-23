@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "total_files": 15,
+    "avg_coverage": 0.9999999953158042,
+    "avg_phonemes": 19.6,
+    "total_phoneme_types": 56
+  },
+  "phoneme_distribution": {
+    "spn": 38,
+    "w": 22,
+    "n": 17,
+    "t": 14,
+    "i˥˩": 13,
+    "x": 11,
+    "ŋ": 11,
+    "o˨˩˦": 11,
+    "j": 10,
+    "ʂ": 9,
+    "a˥˩": 7,
+    "ʐ̩˥˩": 6,
+    "p": 6,
+    "i˨˩˦": 6,
+    "o˥˩": 6,
+    "tʰ": 6,
+    "tɕ": 5,
+    "a˧˥": 5,
+    "o˧˥": 5,
+    "k": 5
+  },
+  "quality_issues": {
+    "low_coverage": [],
+    "high_gaps": [],
+    "short_files": []
+  }
+}
