@@ -1,0 +1,1 @@
+# Expressive-FastSpeech2-Mandarin-Emotional-Speech-Synthesis
